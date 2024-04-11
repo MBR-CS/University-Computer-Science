@@ -1,24 +1,19 @@
-#include <iostream>
+#include <climits>
 #include <cmath>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-bool check();
-int power();
-int product();
+bool CheckPrime(int number) { return false; }
 
+vector<int> Divisors(int number) {}
 
+bool Perfect(vector<int> numbers) { return true; }
+
+void INtervalNumbers(int X, int Y) {}
 
 int main() {
-     // call the function
-    float N;
-    cout<<"please enter a number: ";
-    cin>>N;
-    if (check(N)){
-        cout<<sqrt(N);
-    }
-    else{
-        cout<<"please enter a positive number";
-    }
-    
-    return 0;
+  // call the function
+
+  return 0;
 }
