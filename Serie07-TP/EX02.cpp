@@ -10,7 +10,7 @@ vector<int> Divisors(int number) {}
 
 bool Perfect(vector<int> numbers) { return true; }
 
-void INtervalNumbers(int X, int Y) {}
+void IntervalNumbers(int X, int Y) {}
 
 int main() {
   // call the function
