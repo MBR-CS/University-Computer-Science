@@ -20,7 +20,7 @@ type
 // here creaet a var for using in sub-program
 
 // here i need creaete a function for read data and calculates the price of a vehicle ticket  :
-procedure ReadDataCalculate(var Information : Info);
+procedure ReadDataCalculate(var Information:Info);
 
     var
         DiffMin ,DiffHour,Price: Integer;
@@ -64,9 +64,6 @@ procedure ReadDataCalculate(var Information : Info);
 
 
 
-
-
-
 end;
 
 
@@ -81,7 +78,7 @@ procedure PrintTicket(Information:Info);
 
 // here i need init sub-program
 var
-    CarInfo : Info;
+    CarInfo: Info;
 begin
     ReadDataCalculate(CarInfo);
     PrintTicket(CarInfo);
