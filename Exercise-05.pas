@@ -1,11 +1,11 @@
 program D-LMD ;
 type
-    Doctor = record
-        ID : integer;
-        FullName : string;
-        SP : real;
-        GA : real;
+    PNode = ^Node;
+    Node = record
+        value: integer;
+        next: PNode;
     end;
+
 
 procedure Average(; var);
 var

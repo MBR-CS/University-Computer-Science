@@ -1,11 +1,12 @@
 program OccRepLLL;
 
 type
-
+    PNode = ^Node;
     Node = record
-        Value : integer;
-        Next : ^Node;
+        value: integer;
+        next: PNode;
     end;
+
 /* this function you can take parameter of Node pointer (head the first element in list)
 of lll
 and after excute code block you can return length lll

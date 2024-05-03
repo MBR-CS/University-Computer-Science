@@ -1,11 +1,12 @@
 program FreqCharLLL;
 
 type
-
+    PNode = ^Node;
     Node = record
-        Value : integer;
-        Next : ^Node;
+        value: integer;
+        next: PNode;
     end;
+
 
 
 
