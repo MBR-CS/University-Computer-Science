@@ -6,51 +6,63 @@ type
         value: integer;
         next: PNode;
     end;
+function InitLLL(Len : integer): PNode;
+var
+    p,q,l:PNode;
+    i : integer;
 
-/* this function you can take parameter of Node pointer (head the first element in list)
-of lll
-and after excute code block you can return length lll
-*/
-function Length(Head:^Node):integer
+begin
+    new(p);
+    Read(p^.value);
+    p^.next := nil;
+    l := p;
+    q := p;
+
+    for i := 2 to Len do
+    begin
+        new(p);
+        Read(p^.value);
+        p^.next := nil;
+        q^.next := p;
+        q := p;
+    end;
+    InitLLL := l ;
+end;
+
+// this function you can take parameter of Node pointer (head the first element in list)
+//of lll
+//and after excute code block you can return length lll
+
+function Length(Head : PNode):integer;
 // write code block
 var
-    COUNT , i : integer;
+    p : PNode;
+    COUNT  : integer;
 begin
+    p:=Head;
     COUNT := 0;
-    for () do
-    begin
+    while p <> nil do
 
+    begin
+        // you can use a ready function like <procedure Inc ( var Variable : Ordinal variable; Count : Integer )>
+        // like this Inc(COUNT) and a defeult count is 1
+        COUNT := COUNT + 1;
+        p := p^.next;
     end;
     Length := COUNT;
 end;
 
-/* explain what main this word ( last (first)) : you can use the function length for take a last node and begin search (first occ)
-or you can start your search from the first node and here named (last)
-*/
-function Occ(X, Length:integer): integer;
 var
-    POSITION : integer;
+    H : PNode;
+    result, N : integer;
 begin
+    Write('Please enter length LLL');
+
+    Read(N);
 
 
-end;
-// <Idont have any return here>
-procedure Replaces(X,Y:integer);
-var
+    H := InitLLL(5);
 
-begin
-
-
-end;
-
-
-var
-
-
-
-
-begin
-
-
-
+    result := Length(H);
+    WriteLn('length LLL is : ',result);
 end.
