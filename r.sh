@@ -8,6 +8,7 @@ GREEN='\033[0;32m' # Green color
 if [ "$1" == "cpp" ]; then
     clang++ -std=c++11 "$2" -o a.out
     if [ $? -eq 0 ]; then
+        clear
         echo -e "${GREEN}Done${NC}"
         ./a.out
     else
@@ -23,6 +24,7 @@ elif [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
 else
     fpc "$2.pas"
     if [ $? -eq 0 ]; then
+        clear
         echo -e "${GREEN}Done${NC}"
         ./"$2"
     else
