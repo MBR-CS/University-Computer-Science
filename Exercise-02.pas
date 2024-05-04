@@ -69,9 +69,6 @@ begin
 
 end;
 
-
-
-
 var
     H : PNode;
     C,mostfreq: char ;
